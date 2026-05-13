@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Справочник Excel: Понятия и термины</title>
+    <style>
+        body { font-family: 'Segoe UI', system-ui, sans-serif; line-height: 1.6; max-width: 900px; margin: 0 auto; padding: 20px; background-color: #f0f2f5; }
+        .wrapper { background: #E6E6FA; padding: 40px; border-radius: 15px; box-shadow: 0 10px 25px rgba(0,0,0,0.1); }
+        h1 { color: #107c41; text-align: center; font-size: 2.2em; margin-bottom: 10px; }
+        p.subtitle { text-align: center; color: black; margin-bottom: 30px; text-decoration: underline}
+        
+        /* Алфавитный указатель */
+        .alphabet { display: flex; justify-content: center; flex-wrap: wrap; gap: 10px; margin-bottom: 40px; padding: 15px; background: #f8f9fa; border-radius: 10px; position: sticky; top: 10px; z-index: 100; border: 1px solid #ddd; }
+        .alphabet a { text-decoration: none; color: #107c41; font-weight: bold; padding: 5px 10px; border-radius: 4px; transition: 0.2s; }
+        .alphabet a:hover { background: #107c41; color: white; }
+        
+        /* Стили контента */
+        .letter-group { margin-top: 50px; }
+        .letter-head { font-size: 2.5em; color: black; border-bottom: 2px solid #107c41; margin-bottom: 20px; display: flex; justify-content: space-between; align-items: baseline; }
+        .letter-head span { font-size: 0.4em; }
+        
+        dt { font-weight: 700; color: #212529; font-size: 1.25em; margin-top: 25px; }
+        dd { margin: 10px 0 30px 20px; padding-left: 15px; border-left: 4px solid #107c41; color: #107c41; }
+        
+        /* Ссылки на обучение */
+        .edu-link { display: inline-block; margin-top: 10px; color: #0056b3; text-decoration: none; font-weight: 500; font-size: 0.95em; }
+        .edu-link:hover { text-decoration: underline; color: #107c41; }
+        .up-btn { font-size: 0.5em; text-decoration: none; color: #999; font-weight: normal; }
+    </style>
+</head>
+<body>
+
+<div class="wrapper">
+    <h1 id="top">Глоссарий Excel</h1>
+    <p class="subtitle">Основные понятия и инструменты электронных таблиц</p>
+
+    <div class="alphabet">
+        <a href="#A">А</a> <a href="#V">В</a> <a href="#D">Д</a> <a href="#I">И</a> 
+        <a href="#K">К</a> <a href="#L">Л</a> <a href="#M">М</a> <a href="#O">О</a> 
+        <a href="#S">С</a> <a href="#T">Т</a> <a href="#U">У</a> <a href="#F">Ф</a> <a href="#Uh">Э</a> <a href="#Ya">Я</a>
+    </div>
+
+    <dl>
+        <!-- А -->
+        <div class="letter-group" id="A">
+            <div class="letter-head">А <a href="#top" class="up-btn">наверх ↑</a></div>
+	   <dt>Адрес ячейки</dt>
+            <dd>Состоит из названия  столбца  и  номера  строки, на пересечении которых находится ячейка. Например, Е23 или МL123. </dd>
+	<dt>Активная ячейка</dt>
+            <dd>Выделенная  ячейка </dd>
+            <dt>Абсолютная ссылка</dt>
+            <dd>
+                Фиксированный адрес ячейки, который не меняется при растягивании формулы. Обозначается знаком $. Если  необходимо,  чтобы  при  копировании ссылки  не  изменялись, то нужно использовать абсолютную ссылку. 
+                <br><a href="https://exceltable.com" class="edu-link" target="_blank">🔗 Урок по ссылкам в Excel</a>
+            </dd>
+            <dt>Автосумма</dt>
+            <dd>Это инструмент в Excel, позволяющий автоматически суммировать диапазон чисел (в строке или столбце) без ручного ввода формул. Она автоматически определяет ячейки с числами, создает формулу =СУММ() и выводит результат.</dd>
+        </div>
+
+        <!-- В -->
+        <div class="letter-group" id="V">
+            <div class="letter-head">В <a href="#top" class="up-btn">наверх ↑</a></div>
+            <dt>Время (VLOOKUP)</dt>
+            <dd>
+                Преобразует отдельные числа (часы, минуты, секунды) в числовой формат времени
+                <br><a href="https://exceltable.com" class="edu-link" target="_blank">🔗 Пошаговое руководство по ВПР</a>
+            </dd>
+        </div>
+
+        <!-- Д -->
+        <div class="letter-group" id="D">
+            <div class="letter-head">Д <a href="#top" class="up-btn">наверх ↑</a></div>
+            <dt>Диапазон</dt>
+            <dd>Область  из  нескольких  выделенных  ячеек. Адрес диапазона определяется адресом верхней левой и нижней правой ячеек выделенной  области,  например:  B2:D5.</dd>
+            <dt>Диспетчер имен</dt>
+            <dd>Инструмент для создания «понятных» имен для ячеек вместо их адресов.</dd>
+        </div>
+
+        <!-- И -->
+        <div class="letter-group" id="I">
+            <div class="letter-head">И <a href="#top" class="up-btn">наверх ↑</a></div>
+            <dt>Индекс и Поискпоз</dt>
+            <dd>
+                Связка функций, которая работает быстрее и гибче, чем обычный ВПР.
+                <br><a href="https://exceltable.com" class="edu-link" target="_blank">🔗 Как заменить ВПР этой связкой</a>
+            </dd>
+        </div>
+
+        <!-- К -->
+        <div class="letter-group" id="K">
+            <div class="letter-head">К <a href="#top" class="up-btn">наверх ↑</a></div>
+            <dt>Книга</dt>
+            <dd>Новый  документ,  который  авто-матически  открывается  при  запуске Excel. Файл формата ***.xlsx, содержащий один или несколько рабочих листов.</dd>
+        </div>
+
+<!-- Л -->
+        <div class="letter-group" id="L">
+            <div class="letter-head">Л <a href="#top" class="up-btn">наверх ↑</a></div>
+            <dt>Лист</dt>
+            <dd> Лист  имеет вид  таблицы  и  предоставляет  место для хранения данных и их обработки. Каждая книга  Excel состоит  из  листов.</dd>
+        </div>
+
+        <!-- М -->
+        <div class="letter-group" id="M">
+            <div class="letter-head">М <a href="#top" class="up-btn">наверх ↑</a></div>
+            <dt>Макросы (VBA)</dt>
+            <dd>
+                Мини-программы для автоматизации рутинных действий.
+                <br><a href="https://exceltable.com" class="edu-link" target="_blank">🔗 Основы работы с макросами</a>
+            </dd>
+        </div>
+ <!-- О -->
+        <div class="letter-group" id="O">
+            <div class="letter-head">О <a href="#top" class="up-btn">наверх ↑</a></div>
+            <dt>Относительная адресация</dt>
+            <dd>
+                В  электронных  таблицах  применяется принцип  относительной адресации:  при  копировании  формулы  на  новое  место  ссылки  на ячейки  изменяются  относительно перемещения формулы.
+                </dd>
+<dt>Относительная ссылка</dt>
+            <dd> Ссылки в формулах, которые изменяются  при  копировании. </dd>
+        </div>
+        <!-- С -->
+        <div class="letter-group" id="S">
+            <div class="letter-head">С <a href="#top" class="up-btn">наверх ↑</a></div>
+	<dt> Cтруктурные   элементы  электронной  таблицы</dt>
+            <dd>Cтроки, столбцы  и ячейки</dd>
+	<dt> Ссылка</dt>
+            <dd>Адрес  ячейки,  входящий  в  формулу</dd>
+
+	<dt> Смешанная сылка</dt>
+            <dd>У смешанных ссылок  при  копировании  остается  неизменяемой  только одна  часть:  ссылка  на  номер  строки (Е$4) или столбца ($Е4).</dd>
+             <dt>Сводная таблица</dt>
+            <dd>
+                Инструмент для моментального отчета из тысяч строк данных.
+                <br><a href="https://exceltable.com" class="edu-link" target="_blank">🔗 Создание сводных таблиц с нуля</a>
+            </dd>
+            <dt>Строка формул</dt>
+            <dd>Панель в верхней части окна, где отображается содержимое ячейки или вводится формула.</dd>
+<dt> Сортировка данных</dt>
+            <dd>Упорядочение данных по возрастанию или по убыванию их значений.</dd>
+         </div>
+	<!-- T -->
+        <div class="letter-group" id="T">
+            <div class="letter-head">T <a href="#top" class="up-btn">наверх ↑</a></div>
+            <dt>Табличный процессор</dt>
+            <dd>
+                Прикладные  программы  для  работы с электронными таблицами.
+                </dd>
+            <dt>Строка формул</dt>
+            <dd>Панель в верхней части окна, где отображается содержимое ячейки или вводится формула.</dd>
+        </div>
+	<!-- У -->
+        <div class="letter-group" id="U">
+            <div class="letter-head">Ф <a href="#top" class="up-btn">наверх ↑</a></div>
+            <dt>Условное форматирование</dt>
+            <dd>Автоматическое изменение формата ячеек в зависимости от их содержимого.Например, в предложенном диапазоне чисел выделить красным все отрицательные числа. Для этого: выделите данные, выполните «Главная»-«Условное форматирование»-«Правила выделения ячеек». Выберите критерии:  «Меньше», в поле введите 0.</dd>
+              </div>
+
+
+        <!-- Ф -->
+        <div class="letter-group" id="F">
+            <dt>Фильтр</dt>
+            <dd>Средство отображения только  тех  строк  таблицы,  которые соответствуют заданным условиям.</dd>
+            <dt>Формула</dt>
+            <dd> Запись выражения, по которому  выполняются  вычисления. Математическое или логическое выражение, которое всегда начинается со знака «=».</dd>
+        </div>
+
+ <!-- Э -->
+        <div class="letter-group" id="Uh">
+            <div class="letter-head">Э<a href="#top" class="up-btn">наверх ↑</a></div>
+            <dt>Электронная  таблица</dt>
+            <dd>  таблица,  представленная  в  электронном виде,  в  которой  значения  в  вычис-ляемых  ячейках  могут  автоматически  пересчитываться  при  изменении значений исходных данных.</dd>
+        </div>
+
+        <!-- Я -->
+        <div class="letter-group" id="Ya">
+            <div class="letter-head">Я <a href="#top" class="up-btn">наверх ↑</a></div>
+            <dt>Ячейка</dt>
+            <dd>«Кирпичик» таблицы, имеющий свой уникальный адрес из буквы столбца и цифры строки.</dd>
+        </div>
+    </dl>
+</div>
+
+</body>
+</html>
